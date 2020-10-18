@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/idogmat/react-redux-todo/static/css/main.2bf157d5.chunk.css",
+    "main.js": "/idogmat/react-redux-todo/static/js/main.e2be3457.chunk.js",
+    "main.js.map": "/idogmat/react-redux-todo/static/js/main.e2be3457.chunk.js.map",
+    "runtime-main.js": "/idogmat/react-redux-todo/static/js/runtime-main.73fe4bc4.js",
+    "runtime-main.js.map": "/idogmat/react-redux-todo/static/js/runtime-main.73fe4bc4.js.map",
+    "static/js/2.7ba29baa.chunk.js": "/idogmat/react-redux-todo/static/js/2.7ba29baa.chunk.js",
+    "static/js/2.7ba29baa.chunk.js.map": "/idogmat/react-redux-todo/static/js/2.7ba29baa.chunk.js.map",
+    "index.html": "/idogmat/react-redux-todo/index.html",
+    "precache-manifest.85749ea040c24e71fc4a72644a2d490f.js": "/idogmat/react-redux-todo/precache-manifest.85749ea040c24e71fc4a72644a2d490f.js",
+    "service-worker.js": "/idogmat/react-redux-todo/service-worker.js",
+    "static/css/main.2bf157d5.chunk.css.map": "/idogmat/react-redux-todo/static/css/main.2bf157d5.chunk.css.map",
+    "static/js/2.7ba29baa.chunk.js.LICENSE.txt": "/idogmat/react-redux-todo/static/js/2.7ba29baa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73fe4bc4.js",
+    "static/js/2.7ba29baa.chunk.js",
+    "static/css/main.2bf157d5.chunk.css",
+    "static/js/main.e2be3457.chunk.js"
+  ]
+}
