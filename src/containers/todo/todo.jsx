@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addTast, removeTask, completeTask, changeFilter } from '../../actions/actionCreator';
+import { addTasks, removeTask, completeTask, changeFilter } from '../../actions/actionCreator';
 import ToDoInput from '../../components/todo-input/todo-input';
 import ToDoList from '../../components/todo-list/todo-list';
 import Footer from '../../components/footer/footer';
@@ -15,19 +15,19 @@ class ToDo extends Component {
       taskText: value,
     })
   }
-  addTast = (evt) => {
+  addTasks = (evt) => {
     console.log(evt)
     const { taskText } = this.state;
     if (taskText.length > 3 && evt.type === 'click') {
-      const { addTast } = this.props;
-      addTast((new Date()).getTime(), taskText, false);
+      const { addTasks } = this.props;
+      addTasks((new Date()).getTime(), taskText, false);
       this.setState({
         taskText: '',
       });
     }
     if (taskText.length > 3 && evt.key === 'Enter') {
-      const { addTast } = this.props;
-      addTast((new Date()).getTime(), taskText, false);
+      const { addTasks } = this.props;
+      addTasks((new Date()).getTime(), taskText, false);
       this.setState({
         taskText: '',
       });
@@ -58,7 +58,7 @@ class ToDo extends Component {
 
     return (
       <div className="todo-wrapper">
-        <ToDoInput onClick={this.addTast} onKeyPress={this.addTast} onChange={this.handleInputChange} value={taskText} />
+        <ToDoInput onClick={this.addTasks} onKeyPress={this.addTasks} onChange={this.handleInputChange} value={taskText} />
         {isTasksExist && <ToDoList completeTask={completeTask} tasksList={filteredTasks} removeTask={removeTask} />}
         {isTasksExist && <Footer changeFilter={changeFilter} amount={taskCounter} activeFilter={filters} />}
       </div>
@@ -69,7 +69,7 @@ class ToDo extends Component {
 export default connect(({ tasks, filters }) => ({
   tasks,
   filters,
-}), { addTast, removeTask, completeTask, changeFilter })(ToDo);
+}), { addTasks, removeTask, completeTask, changeFilter })(ToDo);
 
 
 

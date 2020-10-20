@@ -1,6 +1,6 @@
 import { ADD_TASK, REMOVE_TASK, COMPLETE_TASK, CHANGE_FILTER } from '../constants';
 
-export const addTast = (id, text, isCompleted) => ({
+export const addTasks = (id, text, isCompleted) => ({
   type: ADD_TASK,
   id,
   text,
